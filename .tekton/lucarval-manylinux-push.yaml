@@ -23,8 +23,8 @@ spec:
       value: '{{revision}}'
     - name: output-image
       value: quay.io/redhat-user-workloads/calunga-tenant/lucarval-manylinux:{{revision}}
-    - name: dockerfile
-      value: docker/Dockerfile
+    - name: path-context
+      value: docker
   taskRunTemplate:
     serviceAccountName: build-pipeline-lucarval-manylinux
   workspaces:

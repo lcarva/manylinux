@@ -26,8 +26,8 @@ spec:
       value: quay.io/redhat-user-workloads/calunga-tenant/lucarval-manylinux:on-pr-{{revision}}
     - name: image-expires-after
       value: 5d
-    - name: dockerfile
-      value: docker/Dockerfile
+    - name: path-context
+      value: docker
   taskRunTemplate:
     serviceAccountName: build-pipeline-lucarval-manylinux
   workspaces:
